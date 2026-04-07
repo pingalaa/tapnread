@@ -627,12 +627,14 @@ Download Free
 <div class="footer-copy">© 2026 Pingalaa LLC. All rights reserved. Built with ❤️ in Illinois.</div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script>
 // Reveal on scroll
 const observer=new IntersectionObserver((entries)=>{
-entries.forEach(e=>{if(e.isIntersect)y.classList.add('visible')})
+entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')})
 },{threshold:0.15})
 document.querySelectorAll('.reveal').forEach(el=>observer.observe(el))
 </script>
+
 </body>
 </html>
